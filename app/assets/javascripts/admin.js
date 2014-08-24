@@ -1,0 +1,12 @@
+//= require jquery-1.11.0.js
+//= require bootstrap.min.js
+//= require excanvas.min.js
+//= require flot-data.js
+//= require jquery.flot.js
+//= require jquery.flot.pie.js
+//= require jquery.flot.resize.js
+//= require jquery.flot.tooltip.min.js
+//= require morris-data.js
+//= require morris.js
+//= require morris.min.js
+//= require raphael.min.js
