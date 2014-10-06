@@ -5,8 +5,13 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'carrierwave'
 gem 'mysql'
 gem 'devise'
+gem 'bxslider-rails'
+gem 'jquery-turbolinks'
+gem 'nav_link_to', '~> 0.0.4'
+gem "paperclip"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets

@@ -11,7 +11,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.fa {
+.fa, #fa {
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
@@ -38,7 +38,7 @@
 .fa-5x {
   font-size: 5em;
 }
-.fa-fw {
+.fa-fw, #fa-fw {
   width: 1.28571429em;
   text-align: center;
 }
@@ -811,6 +811,7 @@
   content: "\f0e3";
 }
 .fa-dashboard:before,
+#fa-fashboard:before,
 .fa-tachometer:before {
   content: "\f0e4";
 }

@@ -11,8 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require jquery.bxslider.js
 //= require jquery.bxslider.min.js
 //= require pages.js.coffee
+//= require turbolinks
+//= require jssor.slider.js
+//= require jssor.js

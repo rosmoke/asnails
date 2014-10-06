@@ -2,6 +2,5 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready ->
-  $(".bxslider").bxSlider(mode: 'fade',
-  captions: true)
-  
+  $(".bxslider").bxSlider()
+ 

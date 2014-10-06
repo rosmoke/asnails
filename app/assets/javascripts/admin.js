@@ -1,5 +1,5 @@
-//= require jquery-1.11.0.js
-//= require bootstrap.min.js
+//= require jquery.js
+//= require bootstrap.js
 //= require excanvas.min.js
 //= require flot-data.js
 //= require jquery.flot.js

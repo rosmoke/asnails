@@ -3,32 +3,56 @@ class AdminController < ApplicationController
 	before_action :authenticate_user!
 	protect_from_forgery with: :exception
 	before_action :set_title, only: [:index, :edit, :update]
-def set_title
-	@name = Page.find(1)
-end
+	
 
-	def index
-		@title = @name.title
-		@p1 = @name.p1
-		def index
-    @client_ip = remote_ip()
-  end
+def set_title
+	@title = Title.find(1)
+	@content = Page.find(1)
+end
+	def gallery
+		@title = Title.find(1)
+		@content = Page.find(1)
+		@page = Page.new
+
 	end
-	def edit
+def save
+	image = Image.new
+	image.image = params[:file]
+    image.save!
+    redirect_to :back
+	
+end
+	
+	def created
+		@title = Title.new
+		if @title.save
+			flash[:notice] = "You have created the title"
+			redirect_to(:back)
+		else
+			flash[:notice] = "You have not created the title"
+			redirect_to(:back)
+		end
+	end
+	def show
+		@title = Title.find(params[:id])
 	end
 	def update
-		if @name.update_attributes(title_params)
-			flash[:notice] = 'You have successfully changed the title!',
-			redirect_to(:controller => 'admin', :action => 'index')
+		if @title.update_attributes(title_params)
+			flash[:notice] = 'You have successfully changed the title!'
+			redirect_to(:back)
 
 		else 
 			flash[:notice] = 'Sorry, title can\'t be empty.'
 			redirect_to(:controller => 'admin', :action => 'index')
-		end
 	end
+	
+end
 private
 
 def title_params
-	params.require(:page).permit(:id, :title, :p1)
+	params.require(:title).permit(:id, :title, :image)
+end
+def image_params
+  params.require(:image).permit(:image)
 end
 end

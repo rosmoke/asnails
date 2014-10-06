@@ -1,6 +1,6 @@
  Rails.application.routes.draw do
 
-   devise_for :users, path: 'admin'
+   devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -8,15 +8,23 @@
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root 'pages#new'
-
 resources :pages
-resources :admin
-get 'about' => 'pages#about'
+
+get 'services' => 'pages#services'
 get 'about' => 'pages#create'
+get 'contact' => 'pages#contact'
+get 'gallery' => 'pages#gallery'
 match "new", :to => "pages#create", via: :post
 
-patch "admin" => "admin#update", :as => "admin/update"
+
 post "about" => "pages#update", :as => "page/update"
+get "admin" => "admin#index", :as => "admin/index"
+get "admin/gallery" => "admin#gallery", :as => "admin/gallery"
+patch "admin" => "admin#update", :as => "admin", via: :post
+post "admin" => "admin#save", :as => "admin/save"
+post "admin" => "admin#create", :as => "admin/create"
+
+
 
 
 
