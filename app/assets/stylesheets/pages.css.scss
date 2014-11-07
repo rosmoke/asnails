@@ -1,121 +1,250 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* line 4, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 body {
-	background-color: #1d1a19;
+  background-color: #1d1a19;
 }
+
+/* line 7, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 a:link {
-	text-decoration: none;
+  text-decoration: none;
+  color: inherit;
 }
+
+/* line 11, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .header {
-	width: 1000px;
-	height: 179px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	font-family: "Noteworthy";
-	background-image: url('header.jpg');
-	position: relative;
+  width: 990px;
+  height: 185px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Noteworthy";
+  background-image: url("header.jpg");
+  position: relative;
 }
-.nav li {
-	list-style-type: none;
-	display: inline;
-	color: white;
-	margin-left: 36px;
-	margin-right: 95px;
-}
-.nav li a {
-	color: white;
-}
+
+/* line 21, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .nav {
-	text-align: text-bottom;
-	position: absolute;
-	bottom: -6px;
-	margin-left: 18px;
+  width: 935px;
+  height: 45px;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 31px;
+  margin-right: 0px;
+  border-radius: 10px;
 }
+
+/* line 30, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+.nav div {
+  width: 186.4px;
+  height: 37px;
+  padding-top: 9px;
+  float: left;
+  background-image: url("menubuttonn.png");
+  background-size: 186.4px 45px;
+  color: white;
+}
+
+/* line 40, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+.nav div:hover {
+  background-image: url("menuover.png");
+  width: 186.4px;
+}
+
+/* line 45, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .topphoto {
-	width: 1041px;
-	border-radius: 12px;
-	border: 6px;
-	border-color: #887C86;
-	border-style: solid;
-	margin: auto;
+  width: 1041px;
+  height: 337px;
+  border-radius: 20px;
+  border: 7px;
+  border-color: #112711;
+  border-style: solid;
+  margin: auto;
+  text-align: center;
 }
-.content {
-	width: 980px;
-	height: 1000px;
-	background-color: #3a3331;
-	margin: auto;
-	padding-top: 30px;
-	border-radius: 0px 0px 10px 10px;
+
+/* line 55, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+.topphoto img {
+  border-radius: 15px;
 }
+
+/* line 58, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+.content, .contentt {
+  width: 980px;
+  height: 700px;
+  background-image: url("backgroundtable.jpg");
+  margin: auto;
+  padding-top: 30px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* line 66, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+#slider {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+/* line 71, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+.content h2 {
+  font-size: 22px;
+  padding-left: 30px;
+  color: white;
+}
+
+/* line 76, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+.contactdiv {
+  color: green;
+  font-size: 15px;
+  padding-left: 30px;
+  margin-top: 0px;
+}
+
+/* line 82, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+.mapdiv {
+  float: right;
+  width: 100px;
+  margin-top: -200px;
+  padding-right: 450px;
+}
+
+/* line 88, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+.content ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 30px;
+}
+
+/* line 93, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+.content li img {
+  border-radius: 10px;
+  width: 160px;
+  height: 130px;
+  float: left;
+}
+
+/* line 100, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+.widget div {
+  margin-left: 50px;
+  width: 800px;
+  height: 130px;
+  background-image: url("backgroundtable.jpg");
+  border-radius: 10px;
+}
+
+/* line 107, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+.widget p {
+  width: 470px;
+  height: 100px;
+  float: left;
+  color: white;
+  text-align: left;
+  background-color: blue;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+/* line 118, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+.content div h2, h5 {
+  width: 560px;
+  position: absolute;
+  margin-left: 190px;
+  color: white;
+  text-align: justify;
+}
+
+/* line 125, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
+.content hr {
+  margin-left: 20px;
+  float: right;
+  width: 750px;
+  margin-right: 20px;
+}
+
+/* line 132, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 #nailsart2 {
-	border-radius: 10px;
-	background-color: white;
-	margin-left: 29px;
-	border-width: 4px;
-	border-style: ridge;
-	border-color: #712340;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 29px;
+  border-width: 4px;
+  border-style: ridge;
+  border-color: #712340;
 }
+
+/* line 140, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 #p1 {
-	float: right;
-	width: 690px;
-	height: 211px;
-	padding-right: 30px;
-	color: white;
-	font-family: "Myriad Pro";
-	
-	
+  float: right;
+  width: 690px;
+  height: 211px;
+  padding-right: 30px;
+  color: white;
+  font-family: "Myriad Pro";
 }
+
+/* line 148, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .item1 {
-	width: 290px;
-	height: 371px;
-	background-color: #420B20;
-	float: left;
-	margin-left: 17px;
-	border-style: solid;
-	border-width: 4px;
-	border-color: #712340;
-	border-radius: 15px;
-	color: white;
-	text-align: justify;
+  width: 290px;
+  height: 371px;
+  background-color: #420B20;
+  float: left;
+  margin-left: 17px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #712340;
+  border-radius: 15px;
+  color: white;
+  text-align: justify;
 }
+
+/* line 161, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .item1 p {
-	padding: 0px 15px 15px 15px;
+  padding: 0px 15px 15px 15px;
 }
+
+/* line 164, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .item1 img {
-	margin-left: 6px;
+  margin-left: 6px;
 }
+
+/* line 167, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .item4 {
-	width: 270px;
-	height: 250px;
-	background-color: white;
-	float: left;
-	margin: 30px 0px 0px 18px;
-	border-radius: 15px;
-	padding: 15px;
-	text-align: justify;
+  width: 270px;
+  height: 250px;
+  background-color: white;
+  float: left;
+  margin: 30px 0px 0px 18px;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: justify;
 }
+
+/* line 177, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .item5 img {
-	margin: 30px 0px 0px 20px;
-	float: left;
+  margin: 30px 0px 0px 20px;
+  float: left;
 }
+
+/* line 181, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .item6 {
-	float: left;
-	margin: 30px 0px 0px 20px;
-	color: white;
+  float: left;
+  margin: 30px 0px 0px 20px;
+  color: white;
 }
+
+/* line 186, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .footer {
-	width: 980px;
-	height: 80px;
-	color: white;
-	margin: auto;
-	margin-top: 5px
+  height: 80px;
+  color: white;
+  margin: auto;
+  margin-top: 5px;
 }
+
+/* line 193, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .galleryimg p {
-	padding: 0px 5px 5px 5px;
-	color: red;
+  padding: 0px 5px 5px 5px;
+  color: red;
 }
+
+/* line 197, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 #page_newsletter {
-	border-radius: 10px;
+  border-radius: 10px;
 }
