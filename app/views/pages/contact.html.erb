@@ -1,0 +1,46 @@
+<div class="header">
+	<div class="nav">
+		<%= link_to root_path do %><div>Home</div><% end %>
+		<%= link_to :controller => "pages", :action => "services" do %><div>Services</div><% end %>
+		<%= link_to :controller => "pages", :action => "gallery" do %><div>Gallery</div><% end %>
+		<%= link_to :controller => "pages", :action => "contact" do %><div>News</div><% end %>
+		<%= link_to :controller => "pages", :action => "contact" do %><div>Contact</div><% end %>
+	</div>
+</div>
+<div class="topphoto">
+	<img src="assets/nailsart.jpg" width="1041px" height="337px">
+</div>
+<div class="content">
+	<div class="contactdiv"><h2>Contact Us <hr></h2><br /><br /><br />
+		<h3>Phone: 0873591740<br /><br />
+E-mail: info@asnails.ie<br /><br />
+Address: Street Ard Mor Close<br /><br />
+Citywest, Dublin 24
+		</h3>
+	</div><br /><br />
+	<div class="mapdiv">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2385.0716468832793!2d-6.4151359999999995!3d53.288251599999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867748c1f4197e9%3A0x7808c46ed5e1c94c!2s6+%C3%81rd+Mor+Close%2C+Dublin+24!5e0!3m2!1sen!2sie!4v1409672424774" width="500" height="200" frameborder="0" style="border:0"></iframe>
+		</div>
+	
+	
+	<div class="item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore 
+	</div>
+	<div class="item5">
+			<img src="assets/picturebottom.jpg">
+	</div>
+	<div class="item6">
+			<img src="assets/connectwithus.png"><br />
+			<p>Newsletter Sign Up</p>
+			<%= form_for @newsletter do |f| %>
+			Email: <%= f.text_field :title %>
+			<%= f.submit 'Subscribe' %>
+			<% end %><br />
+			<img src="assets/socialbar.png"/>
+	</div>
+	<div class="handsimage">
+	</div>
+</div>

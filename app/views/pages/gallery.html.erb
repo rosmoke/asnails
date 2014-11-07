@@ -1,0 +1,29 @@
+    <div class="header">
+  <div class="nav">
+    <%= link_to root_path do %><div>Home</div><% end %>
+    <%= link_to :controller => "pages", :action => "services" do %><div>Services</div><% end %>
+    <%= link_to :controller => "pages", :action => "gallery" do %><div>Gallery</div><% end %>
+    <%= link_to :controller => "pages", :action => "contact" do %><div>News</div><% end %>
+    <%= link_to :controller => "pages", :action => "contact" do %><div>Contact</div><% end %>
+  </div>
+</div>
+<div class="topphoto">
+  <img src="assets/nailsart.jpg" width="1041px" height="337px">
+</div>
+<div class="contentt">
+    <%= render "imagesgallery" %>
+  <div class="item5">
+    <img src="assets/picturebottom.jpg">
+  </div>
+  <div class="item6">
+    <img src="assets/connectwithus.png"><br />
+    <p>Newsletter Sign Up</p>
+    <%= form_for @newsletter do |f| %>
+    Email: <%= f.text_field :title %>
+    <%= f.submit 'Subscribe' %>
+    <% end %><br />
+    <img src="assets/socialbar.png"/>
+  </div>
+</div>
+<div class="handsimage">
+</div>

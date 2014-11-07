@@ -10,7 +10,7 @@ development:
     database: asnails
     pool: 5
     username: root
-    password: DOBfaHcc
+    password: 
     socket: /tmp/mysql.sock
 
 test:
@@ -20,15 +20,15 @@ test:
     database: asnails
     pool: 5
     username: root
-    password: DOBfaHcc
+    password: 
     socket: /tmp/mysql.sock
   
 production:
     adapter: mysql
     encoding: utf8
     reconnect: true
-    database: dummy
+    database: asnails
     pool: 5
     username: root
-    password: DOBfaHcc
+    password: 
     socket: /tmp/mysql.sock
