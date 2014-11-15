@@ -54,8 +54,8 @@ a:link {
   width: 1041px;
   height: 337px;
   border-radius: 20px;
-  border: 7px;
-  border-color: #112711;
+  border: 1px;
+  border-color: black;
   border-style: solid;
   margin: auto;
   text-align: center;
@@ -74,6 +74,9 @@ a:link {
   margin: auto;
   padding-top: 30px;
   border-radius: 0px 0px 10px 10px;
+}
+.slider1_container {
+	border-radius: 40px;
 }
 
 /* line 66, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
@@ -122,25 +125,56 @@ a:link {
 }
 
 /* line 100, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
-.widget div {
+.eachwidget {
   margin-left: 50px;
   width: 800px;
   height: 130px;
   background-image: url("backgroundtable.jpg");
-  border-radius: 10px;
+  border-radius: 0px;
 }
-
-/* line 107, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
-.widget p {
-  width: 470px;
-  height: 100px;
-  float: left;
-  color: white;
-  text-align: left;
-  background-color: blue;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+.widget h5, h2 {
+	color: #888888;
+	font-family: "Ubuntu";
+	font-weight: 400;
+}
+.eachwidget {
+	border: 1px solid #252626;
+	-moz-border-radius:35px;
+	-webkit-border-radius:35px;
+	border-radius:20px;	
+	color: #fffeff;
+	text-shadow: rgba(0,0,0,0.63) 1px 1px 1px;
+	background-color: #2f3135;
+	-webkit-background-clip: padding-box;
+	margin: 0;
+	display: inline-block;
+	*display:inline;	
+	line-height: 1;
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(255,254,255,0.1);
+	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(255,254,255,0.1);
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(255,254,255,0.1);
+	margin-bottom: 5px;
+	margin-left: 50px;
+}
+.pricetag {
+	border: 1px solid #252626;
+	-moz-border-radius:35px;
+	-webkit-border-radius:35px;
+	border-radius:20px;	
+	color: #fffeff;
+	text-shadow: rgba(0,0,0,0.63) 1px 1px 1px;
+	background-color: #2f3135;
+	-webkit-background-clip: padding-box;
+	display: inline-block;
+	*display:inline;	
+	line-height: 1;
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(255,254,255,0.1);
+	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(255,254,255,0.1);
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(255,254,255,0.1);
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding: 4px 10px 4px 10px;
 }
 
 /* line 118, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
@@ -158,6 +192,52 @@ a:link {
   float: right;
   width: 750px;
   margin-right: 20px;
+}
+
+#leftcontent, #middlecontent, #rightcontent {
+	width: 250px;
+	height: 400px;
+	float: left;
+	margin: 10px 0px 0px 60px;
+	color: #b3b3b3;
+	text-align: justify;
+	margin-bottom: 0px;
+}
+
+.mapdiv {
+	margin-top: -100px;
+	margin-left: 30px;
+	width: 900px;
+	float: left;
+}
+
+.mapdiv img, #leftcontent img, #middlecontent img, #rightcontent img {
+	float: left;
+	width: 30px;
+	height: 30px;
+	
+}
+.mapdiv span, #leftcontent span, #middlecontent span, #rightcontent span {
+	float: left;
+	color: white;
+	line-height: 30px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+#contentnews {
+	color: white;
+	text-align: center;
+}
+
+#demo15 {
+	position: relative;
+	top: -170px;
+	left: 38%;
+	background: url("bookonline.png") no-repeat;
+	width: 200px;
+	height: 68px;
+	background-size: 200px;
+	border: 0;
 }
 
 /* line 132, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
@@ -248,3 +328,4 @@ a:link {
 #page_newsletter {
   border-radius: 10px;
 }
+

@@ -5,9 +5,30 @@
   <%= stylesheet_link_tag    'application.css' %>
   <%= javascript_include_tag 'application.js' %>
   <%= csrf_meta_tags %>
+  <%= growlyflash_static_notices %>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('#demo15').click(function() {
+		        $.blockUI({ message: $('#container1'),
+		            onOverlayClick: $.unblockUI
+		        });
+		    });   
+		});
+	</script>
 </head>
 <body>
-
+<div class="header">
+	<div class="nav">
+		<%= link_to root_path do %><div>Home</div><% end %>
+		<%= link_to :controller => "pages", :action => "services" do %><div>Services</div><% end %>
+		<%= link_to :controller => "pages", :action => "gallery" do %><div>Gallery</div><% end %>
+		<%= link_to :controller => "pages", :action => "news" do %><div>News</div><% end %>
+		<%= link_to :controller => "pages", :action => "contact" do %><div>Contact</div><% end %>
+	</div>
+</div>
+<div class="topphoto">
+	<img src="assets/nailsart.jpg" width="1041px" height="337px">
+</div>
 <%= yield %>
 
 </body>

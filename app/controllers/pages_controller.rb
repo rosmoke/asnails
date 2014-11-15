@@ -21,16 +21,24 @@ def services
 end
 def contact
 	@newsletter = Page.new
+  @booking = Booking.new
 	@titles = Title.find(1)
 	@title = @titles.title
 	@content = Page.find(1)
 end
+
 def gallery
 	@newsletter = Page.new
 	@titles = Title.find(1)
 	@title = @titles.title
 	@content = Page.find(1)
 	@images = Dir.glob('app/assets/images/gallery/*')
+end
+def news
+	@newsletter = Page.new
+	@titles = Title.find(1)
+	@title = @titles.title
+	@content = Page.find(1)
 end
 def update
 	@name = Page.find(1)
@@ -44,7 +52,18 @@ def update
 	end
 end
 
+def booking
+  @booking = Booking.new(booking_params)
+	if @booking.save
+ 			flash[:notice] = 'You have successfully registered!'
+ 			redirect_to(:controller => 'pages', :action => 'contact')
+	else 
+			flash[:notice] = 'Sorry, something is not valid..'
+			redirect_to(:controller => 'pages', :action => 'contact')
+	end
+end
 def create
+  
 	@title = Title.new(title_params)
 	if @title.save
  			flash[:notice] = 'You have successfully registered!'
@@ -58,5 +77,10 @@ end
 private
 def title_params
 	params.require(:page).permit(:id, :title, :p1)
+
+  
+end
+def booking_params
+  params.require(:booking).permit(:id, :name, :phone, :date, :select_option, :email, :comments, :time)
 end
 end

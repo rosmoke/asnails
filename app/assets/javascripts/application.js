@@ -19,3 +19,6 @@
 //= require turbolinks
 //= require jssor.slider.js
 //= require jssor.js
+//= require jquery.blockUI.js
+//= require bootstrap.min.js
+//= require growlyflash/growlyflash

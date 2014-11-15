@@ -8,13 +8,15 @@
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root 'pages#new'
-resources :pages
 
 get 'services' => 'pages#services'
 get 'about' => 'pages#create'
 get 'contact' => 'pages#contact'
 get 'gallery' => 'pages#gallery'
+get 'news' => 'pages#news'
+get 'pages' => 'pages#new'
 match "new", :to => "pages#create", via: :post
+match 'bookings', :to => 'pages#booking', via: :post
 
 
 post "about" => "pages#update", :as => "page/update"
@@ -25,6 +27,7 @@ post "admin" => "admin#save", :as => "admin/save"
 post "admin" => "admin#create", :as => "admin/create"
 
 
+resources :pages
 
 
 
