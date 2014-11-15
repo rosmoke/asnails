@@ -6,6 +6,7 @@ gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
 gem 'carrierwave'
 gem 'mysql'
+gem 'pg'
 gem 'devise'
 gem 'growlyflash'
 gem 'blockuijs-rails',  :git => 'git://github.com/rusanu/blockuijs-rails.git'

@@ -17,6 +17,7 @@ get 'news' => 'pages#news'
 get 'pages' => 'pages#new'
 match "new", :to => "pages#create", via: :post
 match 'bookings', :to => 'pages#booking', via: :post
+match 'bookings', :to => 'pages#booking', via: :get
 
 
 post "about" => "pages#update", :as => "page/update"

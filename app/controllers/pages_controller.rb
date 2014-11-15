@@ -55,10 +55,10 @@ end
 def booking
   @booking = Booking.new(booking_params)
 	if @booking.save
- 			flash[:notice] = 'You have successfully registered!'
+ 			flash[:notice] = 'Your booking is succesfull!'
  			redirect_to(:controller => 'pages', :action => 'contact')
 	else 
-			flash[:notice] = 'Sorry, something is not valid..'
+			flash[:notice] = 'Sorry, something went wrong..try again !'
 			redirect_to(:controller => 'pages', :action => 'contact')
 	end
 end
