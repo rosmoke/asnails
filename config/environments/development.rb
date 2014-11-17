@@ -28,6 +28,9 @@ Rails.application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  config.action_mailer.default_url_option = { :host => 'localhost:3000'}
+  config.action_mailer.delivery_method = :smtp
+  config_action_mailer.perform_deliveries = true
   # Adds additional error checking when serving assets at runtime.
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
