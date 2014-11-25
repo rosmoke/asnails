@@ -15,6 +15,7 @@ a:link {
   height: 185px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -20px;
   text-align: center;
   font-family: "Noteworthy";
   background-image: url("header.jpg");
@@ -24,7 +25,7 @@ a:link {
 /* line 21, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .nav {
   width: 935px;
-  height: 45px;
+  height: 40px;
   position: absolute;
   bottom: 0px;
   margin-left: 31px;
@@ -48,12 +49,27 @@ a:link {
   background-image: url("menuover.png");
   width: 186.4px;
 }
+.header h3 {
+  color: #c7b5c2;
+  
+  line-height: 3px;
+  font-family: "BabyDoll", Georgia, Serif;
+  font-size: 15px;
+  text-align: justify;
+  margin-left: 800px;
+}
+.callus {
+  padding-top: 80px;
+}
+.bookonline strong {
+  color: white;
+}
 
 /* line 45, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .topphoto {
   width: 1041px;
-  height: 337px;
-  border-radius: 20px;
+  height: 330px;
+  border-radius: 17px;
   border: 1px;
   border-color: black;
   border-style: solid;
@@ -71,9 +87,11 @@ a:link {
   width: 980px;
   height: 700px;
   background-image: url("backgroundtable.jpg");
-  margin: auto;
+  margin: 11px auto auto auto;
+  
   padding-top: 30px;
   border-radius: 0px 0px 10px 10px;
+  position: relative;
 }
 .slider1_container {
 	border-radius: 40px;
@@ -153,8 +171,9 @@ a:link {
 	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(255,254,255,0.1);
 	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(255,254,255,0.1);
 	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(255,254,255,0.1);
-	margin-bottom: 5px;
-	margin-left: 50px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+  margin-left: 40px;
 }
 .pricetag {
 	border: 1px solid #252626;
@@ -228,6 +247,7 @@ a:link {
 	color: white;
 	text-align: center;
 }
+
 
 #demo15 {
 	position: relative;
@@ -309,15 +329,55 @@ a:link {
   margin: 30px 0px 0px 20px;
   color: white;
 }
-
-/* line 186, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .footer {
-  height: 80px;
-  color: white;
-  margin: auto;
-  margin-top: 5px;
+  background-image: url("footer.jpg");
+  height: 90px;
+  width: 980px;
+  position: absolute;
+  bottom: 0px;
 }
-
+.footertitles1 { 
+  width: 210px;
+  margin: 15px -22px 0px 0px;
+  margin-left: 70px;
+  color: white;
+  display: block;
+  float: left;
+  font-family: "BabyDoll";
+  font-size: 18px;
+}
+.footertitles2 {
+  color: white;
+  font-family: "BabyDoll";
+  font-size: 18px;
+  float: left;
+  width: 192px;
+  margin: 15px -30px 0px 70px;
+}
+.footercontent div:not(:last-child) {
+  width: 186px;
+  height: 50px;
+  color: white;
+  display: block;
+  float: left;
+  font-family: "Arial Rounded MT Bold";
+  font-size: 12px;
+  margin: 0px 24px 0px 41px;
+}
+.footercontent div:last-child {
+  width: 180px;
+  height: 50px;
+  color: white;
+  display: block;
+  float: left;
+  font-family: "Arial Rounded MT Bold";
+  font-size: 12px;
+  margin: 0px 0px 0px 29px;
+}
+.footercontent div span {
+  margin-right: 23px;
+  float: right;
+}
 /* line 193, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .galleryimg p {
   padding: 0px 5px 5px 5px;

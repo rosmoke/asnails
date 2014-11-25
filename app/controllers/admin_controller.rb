@@ -13,7 +13,10 @@ end
 		@title = Title.find(1)
 		@content = Page.find(1)
 		@page = Page.new
-
+		@photos = Photo.all
+		@photo = Photo.new
+		@headers = Header.all
+		@header = Header.new
 	end
 def save
 	image = Image.new

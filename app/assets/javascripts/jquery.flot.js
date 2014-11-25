@@ -708,7 +708,9 @@
             canvasHeight = placeholder.height();
             
             if (canvasWidth <= 0 || canvasHeight <= 0)
-                throw "Invalid dimensions for plot, width = " + canvasWidth + ", height = " + canvasHeight;
+                // throw "Invalid dimensions for plot, width = " + canvasWidth + ", height = " + canvasHeight;
+            width = 0;
+            height = 0;
         }
 
         function resizeCanvas(c) {

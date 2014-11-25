@@ -5,8 +5,6 @@ Rails.application.configure do
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-
   # Do not eager load code on boot.
   config.eager_load = false
 
@@ -14,8 +12,22 @@ Rails.application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
+
+ActionMailer::Base.delivery_method = :smtp
+
+ActionMailer::Base.smtp_settings = {
+  :address              => "server-0103.whmpanels.com",
+  :port                 => "587",
+  :domain               => "server-0103.whmpanels.com",
+  :user_name            => "contact@prioricargo.ro",
+  :password             => "q1w2e3r4",
+  :authentication       => "plain",
+  :enable_starttls_auto => true
+}
+
+
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -27,10 +39,6 @@ Rails.application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
-
-  config.action_mailer.default_url_option = { :host => 'localhost:3000'}
-  config.action_mailer.delivery_method = :smtp
-  config_action_mailer.perform_deliveries = true
   # Adds additional error checking when serving assets at runtime.
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.

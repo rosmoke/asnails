@@ -1,29 +1,25 @@
 
-<div class="content">
-	<img id="nailsart2" src="assets/nailsart2.jpg" width="210" height="170"/>
-	<p id="p1"><%= @content.p1 %></p>
-	<% flash.each do |name, msg| %>
-  	<%= content_tag :div, msg, :id => "flash#{notice}" if msg.is_a?(String)%>
-	<% end %>
+<img id="nailsart2" src="assets/nailsart2.jpg" width="210" height="170"/>
+<p id="p1"><%= @content.p1 %></p>
+<% flash.each do |name, msg| %>
+	<%= content_tag :div, msg, :id => "flash#{notice}" if msg.is_a?(String)%>
+<% end %>
 
-	<div class="item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore 
-	</div>
-	<div class="item5">
-		<img src="assets/picturebottom.jpg">
-	</div>
-	<div class="item6">
-		<img src="assets/connectwithus.png"><br />
-		<p>Newsletter Sign Up</p>
-		<%= form_for @newsletter do |f| %>
-		Email: <%= f.text_field :title %>
-		<%= f.submit 'Subscribe' %>
-		<% end %><br />
-		<img src="assets/socialbar.png"/>
-	</div>
+<div class="item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore 
 </div>
-<div class="handsimage">
+<div class="item5">
+	<img src="assets/picturebottom.jpg">
+</div>
+<div class="item6">
+	<img src="assets/connectwithus.png"><br />
+	<p>Newsletter Sign Up</p>
+	<%= form_for @newsletter do |f| %>
+	Email: <%= f.text_field :title %>
+	<%= f.submit 'Subscribe' %>
+	<% end %><br />
+	<img src="assets/socialbar.png"/>
 </div>

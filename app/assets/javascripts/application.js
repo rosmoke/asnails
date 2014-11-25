@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery.turbolinks
 //= require jquery_ujs
+//= require jquery.turbolinks
 //= require jquery.bxslider.js
 //= require jquery.bxslider.min.js
 //= require pages.js.coffee
@@ -22,3 +22,4 @@
 //= require jquery.blockUI.js
 //= require bootstrap.min.js
 //= require growlyflash/growlyflash
+//= require social-share-button

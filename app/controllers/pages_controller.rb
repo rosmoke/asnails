@@ -4,27 +4,27 @@ class PagesController < ApplicationController
 	def set_name
 	@content = Page.find(1)
 end
-	def show
-	
-	end
 def new
 	@newsletter = Page.new
 	@titles = Title.find(1)
 	@title = @titles.title
 	@content = Page.find(1)
+	@headers = Header.all
 end
 def services
 	@newsletter = Page.new
 	@name = Page.find(1)
 	@title = @name.title
 	@content = Page.find(1)
+	@headers = Header.all
 end
 def contact
 	@newsletter = Page.new
-  @booking = Booking.new
+  	@booking = Booking.new
 	@titles = Title.find(1)
 	@title = @titles.title
 	@content = Page.find(1)
+	@headers = Header.all
 end
 
 def gallery
@@ -32,13 +32,20 @@ def gallery
 	@titles = Title.find(1)
 	@title = @titles.title
 	@content = Page.find(1)
-	@images = Dir.glob('app/assets/images/gallery/*')
+	@photos = Photo.all
+	@photo = Photo.new
+	@headers = Header.all
+	@header = Header.new
 end
 def news
 	@newsletter = Page.new
 	@titles = Title.find(1)
 	@title = @titles.title
 	@content = Page.find(1)
+	@headers = Header.all
+	@header = Header.new
+
+	
 end
 def update
 	@name = Page.find(1)
@@ -56,6 +63,7 @@ def booking
   @booking = Booking.new(booking_params)
 	if @booking.save
  			flash[:notice] = 'Your booking is succesfull!'
+ 			UserMailer.welcome_email(@user).deliver
  			redirect_to(:controller => 'pages', :action => 'contact')
 	else 
 			flash[:notice] = 'Sorry, something went wrong..try again !'
@@ -63,7 +71,6 @@ def booking
 	end
 end
 def create
-  
 	@title = Title.new(title_params)
 	if @title.save
  			flash[:notice] = 'You have successfully registered!'
@@ -75,12 +82,12 @@ def create
 end
 
 private
-def title_params
-	params.require(:page).permit(:id, :title, :p1)
+	def title_params
+		params.require(:page).permit(:id, :title, :p1)
 
-  
-end
-def booking_params
-  params.require(:booking).permit(:id, :name, :phone, :date, :select_option, :email, :comments, :time)
-end
+	  
+	end
+	def booking_params
+	  params.require(:booking).permit(:id, :name, :phone, :date, :select_option, :email, :comments, :time)
+	end
 end

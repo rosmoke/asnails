@@ -2,10 +2,10 @@
 <html>
 <head>
   <title><%= @title %></title>
+  <%= growlyflash_static_notices %>
   <%= stylesheet_link_tag    'application.css' %>
   <%= javascript_include_tag 'application.js' %>
   <%= csrf_meta_tags %>
-  <%= growlyflash_static_notices %>
 	<script type="text/javascript">
 		$(document).ready(function() {
 		    $('#demo15').click(function() {
@@ -18,7 +18,10 @@
 </head>
 <body>
 <div class="header">
+	<h3 class="callus">Call us: +353 87 225 3137</h3>
+	<h3 class="bookonline">Book online<strong> here</strong></h3>
 	<div class="nav">
+
 		<%= link_to root_path do %><div>Home</div><% end %>
 		<%= link_to :controller => "pages", :action => "services" do %><div>Services</div><% end %>
 		<%= link_to :controller => "pages", :action => "gallery" do %><div>Gallery</div><% end %>
@@ -27,9 +30,25 @@
 	</div>
 </div>
 <div class="topphoto">
-	<img src="assets/nailsart.jpg" width="1041px" height="337px">
+	<%= render :partial => 'topphoto' %>
 </div>
-<%= yield %>
+<div class="content">
+	<%= yield %>
+	</br>
+	<div class="footer">
+		<div class="footertitles1">Visit us</div>
+		<div class="footertitles1">Call us</div>
+		<div class="footertitles2">Contact us</div>
+		<div class="footertitles2">Opening hours</div>
+		</br></br></br>
+		<div class="footercontent">
+			<div>6 Ard Mor Close,</br> Dublin 24, Ireland</div>
+			<div>+353 85 225 3137</div>
+			<div>contact@artisticnails</div>
+			<div>Mon-Sat<span>9:00 - 20:00</span> </br>Sunday <span>10:00 - 16:00</span></div>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>
