@@ -2,22 +2,20 @@ class AdminController < ApplicationController
 	layout "admin"
 	before_action :authenticate_user!
 	protect_from_forgery with: :exception
-	before_action :set_title, only: [:index, :edit, :update]
 	
-
-def set_title
+def gallery
 	@title = Title.find(1)
 	@content = Page.find(1)
+	@page = Page.new
+	@photos = Photo.all
+	@photo = Photo.new
+	@headers = Header.all
+	@header = Header.new
 end
-	def gallery
-		@title = Title.find(1)
-		@content = Page.find(1)
-		@page = Page.new
-		@photos = Photo.all
-		@photo = Photo.new
-		@headers = Header.all
-		@header = Header.new
-	end
+def news
+	@title = Title.find(1)
+	@news = News.all
+end
 def save
 	image = Image.new
 	image.image = params[:file]

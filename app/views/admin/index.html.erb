@@ -28,13 +28,14 @@
                             <div class="panel-heading">
                                 <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Change main title</h3>
                             </div>
-                            <div class="panel-body">
-                            <%= form_for @title, :url => { :action => "update" } do |f| %>
-                               <%= raw flash[:notice] %><br />
-                                <%= f.text_field :title, :class => "panel panel-default" %>
-                                <%= submit_tag("Update") %>
-                                <% end %>
-
+                            <div data-pjax-container>
+                                <div class="panel-body">
+                                <%= form_for @title, :url => { :action => "update" } do |f| %>
+                                   <%= raw flash[:notice] %><br />
+                                    <%= f.text_field :title, :class => "panel panel-default" %>
+                                    <%= submit_tag("Update") %>
+                                    <% end %>
+                                </div>
                             </div>
                         </div>
                     </div>

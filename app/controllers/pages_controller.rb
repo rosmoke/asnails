@@ -26,7 +26,10 @@ def contact
 	@content = Page.find(1)
 	@headers = Header.all
 end
-
+def createbooking
+	@booking = Booking.new
+	@headers = Header.all
+end
 def gallery
 	@newsletter = Page.new
 	@titles = Title.find(1)
@@ -36,16 +39,22 @@ def gallery
 	@photo = Photo.new
 	@headers = Header.all
 	@header = Header.new
+
 end
-def news
+def articles
 	@newsletter = Page.new
 	@titles = Title.find(1)
 	@title = @titles.title
 	@content = Page.find(1)
 	@headers = Header.all
 	@header = Header.new
-
-	
+	shit = News.all
+	if shit.count > 0
+		@lastarticle = News.last	
+	else
+		News.create!(:id => "1", :title => "Demo", :content => "Demo content", :img_url => "demo.png", :votes => "2")
+		@lastarticle = News.last
+	end
 end
 def update
 	@name = Page.find(1)
@@ -63,7 +72,7 @@ def booking
   @booking = Booking.new(booking_params)
 	if @booking.save
  			flash[:notice] = 'Your booking is succesfull!'
- 			UserMailer.welcome_email(@user).deliver
+ 			PersonMailer.welcome_email(@booking).deliver
  			redirect_to(:controller => 'pages', :action => 'contact')
 	else 
 			flash[:notice] = 'Sorry, something went wrong..try again !'

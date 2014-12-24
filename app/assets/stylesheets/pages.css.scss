@@ -83,12 +83,11 @@ a:link {
 }
 
 /* line 58, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
-.content, .contentt {
+.content {
   width: 980px;
   height: 700px;
   background-image: url("backgroundtable.jpg");
   margin: 11px auto auto auto;
-  
   padding-top: 30px;
   border-radius: 0px 0px 10px 10px;
   position: relative;
@@ -110,43 +109,28 @@ a:link {
   padding-left: 30px;
   color: white;
 }
-
+.contentt {
+  margin-top: -50px;
+}
 /* line 76, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .contactdiv {
-  color: green;
   font-size: 15px;
   padding-left: 30px;
   margin-top: 0px;
 }
-
-/* line 82, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
-.mapdiv {
-  float: right;
-  width: 100px;
-  margin-top: -200px;
-  padding-right: 450px;
-}
-
-/* line 88, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
-.content ul li {
-  list-style-type: none;
-  display: inline;
-  margin-right: 30px;
-}
-
 /* line 93, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
-.content li img {
+.widget img {
   border-radius: 10px;
   width: 160px;
-  height: 130px;
+  height: 100%;
   float: left;
 }
 
 /* line 100, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .eachwidget {
   margin-left: 50px;
-  width: 800px;
-  height: 130px;
+  width: 80%;
+  height: 121px;
   background-image: url("backgroundtable.jpg");
   border-radius: 0px;
 }
@@ -172,8 +156,8 @@ a:link {
 	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(255,254,255,0.1);
 	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(255,254,255,0.1);
 	margin-bottom: 15px;
-	margin-top: 20px;
-  margin-left: 40px;
+	margin-top: 0px;
+  margin-left: 10%;
 }
 .pricetag {
 	border: 1px solid #252626;
@@ -196,11 +180,80 @@ a:link {
 	padding: 4px 10px 4px 10px;
 }
 
+/* News start */
+
+.generalnews, .relatednews {
+  float: left;
+  height: 100%;
+  margin-top: -25px;
+}
+.articlepicture {
+  width: 40%;
+  height: 40%;
+  float: left;
+  margin: 20px 20px 0px 30px;
+  border-radius: 3%;
+}
+.generalnews {
+  width: 69%;
+  height: 100%;
+}
+.generalnews article {
+  padding: 40px 20px 10px 30px;
+  text-align: justify;
+  color: #d0c6cd;
+  font-family: "Noteworthy";
+}
+.relatednews {
+  width: 31%;
+}
+.generalnews h4 {
+  float: left;
+  width: 300px;
+  height: 30px;
+  color: white;
+}
+.relatednews div {
+  width: 100%;
+  height: 24%;
+  margin: 0px 0px -15px 0px;
+  padding: 0px;
+}
+.imgnews {
+  margin-right: 10px;
+
+}
+.latestnewsimg {
+  width: 140px;
+  border-radius: 2px;
+  margin-right: 10px;
+  float: left;
+}
+.latestnewsp, .latestnewsreadmore {
+  padding: 0px 10px 0px 0px;
+  text-align: left;
+  color: #d0c6cd;
+  font-family: "Noteworthy";
+}
+a.latestnewsreadmore:link, a.latestnewsreadmore:visited, a.latestnewsreadmore:active, a.latestnewsreadmore {
+  float: right;
+  margin-top: -12px;
+  margin-right: 6px;
+  color: #d0c6cd;
+  font-size: 14px;
+}
+.dividinglinenews {
+  margin-top: -5px;
+  width: 95%
+}
+/* News end */
+
 /* line 118, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .content div h2, h5 {
   width: 560px;
   position: absolute;
   margin-left: 190px;
+  margin-top: 10px;
   color: white;
   text-align: justify;
 }
@@ -212,73 +265,188 @@ a:link {
   width: 750px;
   margin-right: 20px;
 }
-
-#leftcontent, #middlecontent, #rightcontent {
-	width: 250px;
-	height: 400px;
-	float: left;
-	margin: 10px 0px 0px 60px;
-	color: #b3b3b3;
-	text-align: justify;
-	margin-bottom: 0px;
+.contactdiv {
+  width: 100%;
+  height: 87%;
+  font-family: "Noteworthy";
+}
+.contactdiv p {
+  color: #d0c6cd;
+}
+.contactdiv h3, .generalnews h3, .relatednews h3 {
+  font-family: "AlienLeague";
+  text-shadow: 2px 1px 4px #000000;
+  font-size: 30px;
+  text-indent: 15px;
+  color: #f5edf0;
+}
+.tagimage {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+.aboutus, .rightcontactus {
+  width: 49%;
+  height: 100%;
+  float: left;
+  margin-left: 5px;
+  color: white;
 }
 
-.mapdiv {
-	margin-top: -100px;
-	margin-left: 30px;
-	width: 900px;
-	float: left;
+.rightcontactus div {
+  height: 27%;
+  margin: 10px;
 }
 
-.mapdiv img, #leftcontent img, #middlecontent img, #rightcontent img {
-	float: left;
-	width: 30px;
-	height: 30px;
-	
-}
-.mapdiv span, #leftcontent span, #middlecontent span, #rightcontent span {
-	float: left;
-	color: white;
-	line-height: 30px;
-	margin-left: 10px;
-	margin-bottom: 20px;
-}
-#contentnews {
-	color: white;
-	text-align: center;
-}
-
-
-#demo15 {
-	position: relative;
-	top: -170px;
-	left: 38%;
+#demo15, #demo12 {
 	background: url("bookonline.png") no-repeat;
+  position: relative;
+  display: block;
+  top: 20%;
+  margin-left: 20%;
 	width: 200px;
-	height: 68px;
+	height: 49px;
 	background-size: 200px;
 	border: 0;
 }
-
-/* line 132, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
-#nailsart2 {
-  border-radius: 10px;
-  background-color: white;
-  margin-left: 29px;
-  border-width: 4px;
-  border-style: ridge;
-  border-color: #712340;
+.specialoffersimg {
+  position: absolute;
+  display: block;
+  right: 20px;
+  top: 20px;
+  width: 70px;
+}
+.whatsnew, .welcome, .specialoffers {
+  width: 32%;
+  height: 86%;
+  float: left;
+  margin: 6px;
+  padding: 15px;
+}
+.whatsnew h3, .welcome h3, .specialoffers h3 {
+  font-family: "AlienLeague";
+  text-align: center;
+  color: #f5edf0;
+  font-size: 30px;
+  margin: 0px;
+  text-shadow: 2px 1px 4px #000000;
 }
 
-/* line 140, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
-#p1 {
-  float: right;
-  width: 690px;
-  height: 211px;
-  padding-right: 30px;
+.homenews {
+  height: 32%;
   color: white;
-  font-family: "Myriad Pro";
+  padding: 10px;
+  margin: 0px;
+  font-family: "Noteworthy";
+  font-size: 14px;
+  color: #c5a6b3;
+  position: relative;
 }
+
+.readmorebar {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 96%;
+}
+
+.readmore {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  width: 40%;
+  float: right;
+}
+
+.firstimg {
+  background-color: #5e3c52;
+  width: 44%;
+  height: 46%;
+  float: left;
+  border-radius: 15px;
+  border: 0px;
+  border-color: #5e3c52;
+  margin: 4px;
+}
+
+/* WELCOME DIV START */
+.welcome {
+  height: 100%;
+  font-size: 14px;
+  padding: 10px;
+  font-family: "Noteworthy";
+  line-height: 160%;
+  text-align: justify;
+  color: #c5a6b3;
+}
+.topwelcome {
+  position: relative;
+  height: 59.6%;
+}
+.manicurepic {
+  position: absolute;
+  top: 20px;
+  width: 94%;
+  display: block;
+  margin: 0px 9px 0px 9px;
+}
+.topwelcome p {
+  position: absolute;
+  bottom: 0px;
+}
+.welcomebar {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 0px;
+    width: 96%;
+}
+.welcomesubscribe {
+  height: 27%;
+  padding-top: 10px;
+}
+
+/* WELCOME DIV END */
+
+/* SPECIAL OFFERS START */
+
+.specialoffers1 {
+  position: relative;
+  height: 22%;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  border-radius: 20px;
+  background-color: #ac718d;
+}
+.specialoffers1 img {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.readmoreoffers {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+}
+
+
+#logobottom {
+  width: 300px;
+  position: absolute;
+  bottom: 88px;
+  right: 0px;
+}
+.logobottombig {
+  width: 25%;
+}
+.logobottomsmall {
+  width: 10%;
+}
+
+/* SPECIAL OFFERS END */
 
 /* line 148, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
 .item1 {
@@ -305,30 +473,6 @@ a:link {
   margin-left: 6px;
 }
 
-/* line 167, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
-.item4 {
-  width: 270px;
-  height: 250px;
-  background-color: white;
-  float: left;
-  margin: 30px 0px 0px 18px;
-  border-radius: 15px;
-  padding: 15px;
-  text-align: justify;
-}
-
-/* line 177, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
-.item5 img {
-  margin: 30px 0px 0px 20px;
-  float: left;
-}
-
-/* line 181, /Users/alla/Documents/Projects/asnails/app/assets/stylesheets/pages.css.scss */
-.item6 {
-  float: left;
-  margin: 30px 0px 0px 20px;
-  color: white;
-}
 .footer {
   background-image: url("footer.jpg");
   height: 90px;

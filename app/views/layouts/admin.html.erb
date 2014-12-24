@@ -20,9 +20,14 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+        <script>
+    $(document).ready(function() {
+        $('#dataTables-example').dataTable();
+    });
+    </script>
     </head>
     <body>
+
     <div id="wrapper">
 
         <!-- Navigation -->
@@ -103,6 +108,7 @@
                   <%= nav_link_to ' View the site', root_path, nil, { id: 'li_element_id' }, { class: 'fa fa-fw fa-table' } %>
                   <%= nav_link_to ' Dashboard', admin_path, nil, { id: 'li_element_id' }, { class: 'fa fa-fw fa-dashboard' } %>
                   <%= nav_link_to ' Gallery', admin_gallery_path, nil, { id: 'li_element_id' }, { class: 'fa fa-fw fa-edit' } %>
+                  <%= nav_link_to ' News', admin_news_path, nil, { id: 'li_element_id' }, { class: 'fa fa-fw fa-edit' } %>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

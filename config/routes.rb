@@ -1,4 +1,6 @@
  Rails.application.routes.draw do
+  resources :news
+
   resources :people
 
   get 'homes/show'
@@ -18,8 +20,9 @@ resources :homes, only: [:show]
 get 'services' => 'pages#services'
 get 'about' => 'pages#create'
 get 'contact' => 'pages#contact'
+get 'createbooking' => 'pages#createbooking'
 get 'gallery' => 'pages#gallery'
-get 'news' => 'pages#news'
+get 'articles' => 'pages#articles'
 get 'pages' => 'pages#new'
 match "new", :to => "pages#create", via: :post
 match 'bookings', :to => 'pages#booking', via: :post
@@ -29,6 +32,7 @@ match 'bookings', :to => 'pages#booking', via: :get
 post "about" => "pages#update", :as => "page/update"
 get "admin" => "admin#index", :as => "admin/index"
 get "admin/gallery" => "admin#gallery", :as => "admin/gallery"
+get "admin/news" => "admin#news", :as => "admin/news"
 patch "admin" => "admin#update", :as => "admin", via: :post
 post "admin" => "admin#save", :as => "admin/save"
 post "admin" => "admin#create", :as => "admin/create"

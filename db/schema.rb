@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141124133853) do
+ActiveRecord::Schema.define(version: 20141219220304) do
 
   create_table "admins", force: true do |t|
     t.string   "title"
@@ -38,6 +38,15 @@ ActiveRecord::Schema.define(version: 20141124133853) do
   create_table "headers", force: true do |t|
     t.string   "image_uid"
     t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "news", force: true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.string   "img_url"
+    t.integer  "votes"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -25,7 +25,7 @@
 		<%= link_to root_path do %><div>Home</div><% end %>
 		<%= link_to :controller => "pages", :action => "services" do %><div>Services</div><% end %>
 		<%= link_to :controller => "pages", :action => "gallery" do %><div>Gallery</div><% end %>
-		<%= link_to :controller => "pages", :action => "news" do %><div>News</div><% end %>
+		<%= link_to :controller => "pages", :action => "articles" do %><div>News</div><% end %>
 		<%= link_to :controller => "pages", :action => "contact" do %><div>Contact</div><% end %>
 	</div>
 </div>
@@ -35,6 +35,14 @@
 <div class="content">
 	<%= yield %>
 	</br>
+	<div class="logobottom" id="logobottom">
+		<img class="logobottombig" src="assets/ezflow.png">
+		<img class="logobottombig" src="assets/nsi.png">
+		<img class="logobottomsmall" src="assets/facebook.png">
+		<img class="logobottomsmall" src="assets/googleplus.png">
+		<img class="logobottomsmall" src="assets/twitter.png">
+		<img class="logobottomsmall" src="assets/email-blue.png">
+	</div>
 	<div class="footer">
 		<div class="footertitles1">Visit us</div>
 		<div class="footertitles1">Call us</div>

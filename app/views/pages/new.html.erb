@@ -1,25 +1,63 @@
-
-<img id="nailsart2" src="assets/nailsart2.jpg" width="210" height="170"/>
-<p id="p1"><%= @content.p1 %></p>
+<!-- 
+<%= @content.p1 %></p>
 <% flash.each do |name, msg| %>
 	<%= content_tag :div, msg, :id => "flash#{notice}" if msg.is_a?(String)%>
-<% end %>
-
-<div class="item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore 
+<% end %> -->
+<img class="specialoffersimg" src="assets/specialoffers.png">
+<div class="whatsnew">
+	
+	<h3>WHAT'S NEW</h3>
+	<div class="homenews">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		<img class="readmore" src="assets/readmore.png">
+		<img class="readmorebar" src="assets/bar.png">
+	</div>
+	<div class="homenews">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		<img class="readmore" src="assets/readmore.png">
+		<img class="readmorebar" src="assets/bar.png">
+	</div>
+	
+	<div class="homenews">
+		<img class="firstimg" src="">
+		<img class="firstimg" src="">
+		<img class="firstimg" src="">
+		<img class="firstimg" src="">
+	</div>
 </div>
-<div class="item5">
-	<img src="assets/picturebottom.jpg">
+<div class="welcome">
+	<div class="topwelcome">
+		<h3>WELCOME!</h3>
+		<img class="manicurepic" src="assets/manicurepic.jpg">
+		<p>Because dreams are what guide us, nails and art are 
+	what defines us and love is what lights our way, we
+	have decided to share a part of us by creating “Artistic
+	Nails” website.
+	We are qualified and talented nail technicians with 
+	experience in the nail industry and with a keen eye on 
+	details. We are offering special nail treatments and
+	professional advices to ensure that your nails will
+	always be beautiful and healthy.
+		</p>
+		<img class="welcomebar" src="assets/bar.png">
+	</div>
+	<div class="welcomesubscribe">
+		<p>If you would like us to contact you in reference to special offers or updates please subscribe to us.</p>
+	</div>
 </div>
-<div class="item6">
-	<img src="assets/connectwithus.png"><br />
-	<p>Newsletter Sign Up</p>
-	<%= form_for @newsletter do |f| %>
-	Email: <%= f.text_field :title %>
-	<%= f.submit 'Subscribe' %>
-	<% end %><br />
-	<img src="assets/socialbar.png"/>
+	
+<div class="specialoffers">
+	<h3>SPECIAL OFFERS</h3>
+	<div class="specialoffers1">
+		<img src="assets/booknow.png">
+	</div>
+	<div class="specialoffers1">
+		<img src="assets/booknow.png">
+	</div>
+	<div class="specialoffers1">
+		<img src="assets/booknow.png">
+	</div>
+	<img class="readmoreoffers" src="assets/readmore.png">
 </div>

@@ -1,9 +1,9 @@
 class PersonMailer < ActionMailer::Base
   default from: "contact@artisticnails.ie"
 
-  def welcome_email(person)
-  	@person = person
+  def welcome_email(booking)
+  	@booking = booking
   	@url = 'http://artisticnails.com/login'
-  	mail(to: @person.email, subject: 'Welcome to my awesome site')
+  	mail(to: @booking.email, subject: 'Welcome to my awesome site')
   end
 end

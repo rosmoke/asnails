@@ -3,3 +3,7 @@
 //= require excanvas.min.js
 //= require raphael.min.js
 //= require growlyflash/growlyflash
+//= require jquery.dataTables.js
+//= require metisMenu.min.js
+//= require dataTables.bootstrap.js
+//= require sb-admin-2.js
