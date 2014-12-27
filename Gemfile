@@ -21,6 +21,7 @@ gem 'coffee-rails'
 gem 'dragonfly'
 gem 'acts_as_indexed'
 gem 'social-share-button'
+gem 'magnific-popup-rails'
 group :production do
   gem 'rack-cache', :require => 'rack/cache'
 end

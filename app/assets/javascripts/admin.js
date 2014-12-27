@@ -1,4 +1,5 @@
 //= require jquery.js
+//= require jquery_ujs
 //= require bootstrap.js
 //= require excanvas.min.js
 //= require raphael.min.js
@@ -7,3 +8,6 @@
 //= require metisMenu.min.js
 //= require dataTables.bootstrap.js
 //= require sb-admin-2.js
+//= require jquery.blockUI.js
+//= require jquery.blockUI
+//= require magnific-popup

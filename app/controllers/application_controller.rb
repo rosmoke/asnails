@@ -1,12 +1,13 @@
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
-  before_action :set_title, only: [:index, :edit, :update]
+  before_action :set_title, only: [:index, :edit, :update, :new, :show]
   protect_from_forgery with: :exception
 	def set_title
 		@title = Title.find(1)
 		@content = Page.find(1)
 	end
+
 
 	private
 

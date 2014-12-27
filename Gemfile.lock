@@ -75,6 +75,7 @@ GEM
       railties (>= 3.1.0)
       turbolinks
     json (1.8.1)
+    magnific-popup-rails (0.9.9.1)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -163,6 +164,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
+  magnific-popup-rails
   mysql
   nav_link_to (~> 0.0.4)
   pg

@@ -2,6 +2,7 @@ class AdminController < ApplicationController
 	layout "admin"
 	before_action :authenticate_user!
 	protect_from_forgery with: :exception
+	before_action :set_news, only: [:show, :edit, :update, :destroy, :new]
 	
 def gallery
 	@title = Title.find(1)
@@ -14,7 +15,9 @@ def gallery
 end
 def news
 	@title = Title.find(1)
-	@news = News.all
+	@newsall = News.all
+	
+	@newsnew = News.new
 end
 def save
 	image = Image.new
@@ -49,6 +52,14 @@ end
 	
 end
 private
+
+   def set_news
+      @news = News.find(params[:id])
+    end
+
+    def news_params
+      params.require(:news).permit(:title, :content, :img_url, :votes)
+    end
 
 def title_params
 	params.require(:title).permit(:id, :title, :image)

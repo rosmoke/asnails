@@ -1,4 +1,4 @@
-  <div class="" id="container3" style="display:none">
+  <div id="test-form" class="mfp-hide white-popup-block">
         <div class="row centered-form">
             <div class="">
                 <div class="panel panel-default">
@@ -6,13 +6,13 @@
                         <h3 class="panel-title text-center" style="font-weight: bold; font-size:20px;">Create a new article !</h3>
                     </div>
                     <div class="panel-body">
-                        <%= form_for(@newsnew) do |f| %>
-                        <% if @newsnew.errors.any? %>
+                        <%= form_for @news, :url => url_for(:controller => 'news', :action => 'update') do |f| %>
+                        <% if @news.errors.any? %>
                         <div id="error_explanation">
-                          <h2><%= pluralize(@newsnew.errors.count, "error") %> prohibited this news from being saved:</h2>
+                          <h2><%= pluralize(@news.errors.count, "error") %> prohibited this news from being saved:</h2>
 
                           <ul>
-                          <% @newsnew.errors.full_messages.each do |message| %>
+                          <% @news.errors.full_messages.each do |message| %>
                             <li><%= message %></li>
                           <% end %>
                           </ul>

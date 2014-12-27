@@ -1,12 +1,13 @@
 class NewsController < ApplicationController
   layout "admin"
-  before_action :set_news, only: [:show, :edit, :update, :destroy]
+  before_action :set_news, only: [:show, :edit, :update, :destroy, :new]
 
   respond_to :html
 
   def index
     @news = News.all
     respond_with(@news)
+
   end
 
   def show
@@ -24,7 +25,7 @@ class NewsController < ApplicationController
   def create
     @news = News.new(news_params)
     @news.save
-    respond_with(@news)
+    respond_with(@admin, :location => admin_news_path)
   end
 
   def update
