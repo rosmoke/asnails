@@ -2,7 +2,7 @@ class AdminController < ApplicationController
 	layout "admin"
 	before_action :authenticate_user!
 	protect_from_forgery with: :exception
-	before_action :set_news, only: [:show, :edit, :update, :destroy, :new]
+
 	
 def gallery
 	@title = Title.find(1)
@@ -15,9 +15,8 @@ def gallery
 end
 def news
 	@title = Title.find(1)
-	@newsall = News.all
-	
-	@newsnew = News.new
+	@newsall = News.order("created_at DESC")
+	@news = News.new
 end
 def save
 	image = Image.new

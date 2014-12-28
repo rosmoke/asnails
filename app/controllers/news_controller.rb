@@ -1,6 +1,5 @@
-class NewsController < ApplicationController
-  layout "admin"
-  before_action :set_news, only: [:show, :edit, :update, :destroy, :new]
+class NewsController < ApplicationController  
+  before_action :set_news, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
 
@@ -16,7 +15,7 @@ class NewsController < ApplicationController
 
   def new
     @news = News.new
-    respond_with(@news)
+    
   end
 
   def edit

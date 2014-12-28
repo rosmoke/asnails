@@ -1,6 +1,6 @@
  Rails.application.routes.draw do
   
-resources :news, :except => [:index, :delete, :new]
+resources :news
   resources :people
 
   get 'homes/show'
@@ -33,7 +33,7 @@ post "about" => "pages#update", :as => "page/update"
 get "admin" => "admin#index", :as => "admin/index"
 get "admin/gallery" => "admin#gallery", :as => "admin/gallery"
 get "admin/news" => "admin#news", :as => "admin/news"
-get "admin/news/new" => "news#new", :as => "new/news"
+
 patch "admin" => "admin#update", :as => "admin", via: :post
 post "admin" => "admin#save", :as => "admin/save"
 post "admin" => "admin#create", :as => "admin/create"
