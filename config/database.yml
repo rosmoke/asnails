@@ -10,21 +10,13 @@ development:
   database: app-dev
 
 test:
-    adapter: mysql
-    encoding: utf8
-    reconnect: true
-    database: asnails
-    pool: 5
-    username: root
-    password: 
-    socket: /tmp/mysql.sock
+  adapter: postgresql
+  host: localhost
+  username: user
+  database: app-dev
   
 production:
-    adapter: mysql
-    encoding: utf8
-    reconnect: true
-    database: asnails
-    pool: 5
-    username: root
-    password: 
-    socket: /tmp/mysql.sock
+  adapter: postgresql
+  host: localhost
+  username: user
+  database: app-dev
