@@ -25,3 +25,4 @@
 //= require social-share-button
 //= require jquery.blockUI
 //= require magnific-popup
+//= require jquery.autosize.js		

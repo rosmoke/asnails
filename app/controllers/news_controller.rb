@@ -17,6 +17,13 @@ class NewsController < ApplicationController
     @news = News.new
     
   end
+  def vote_for
+    @article = News.find(params[:id])
+    current_user.vote_for(@article)
+    respond_to do |format|
+      format.js
+    end
+end
 
   def edit
   end
@@ -29,7 +36,7 @@ class NewsController < ApplicationController
 
   def update
     @news.update(news_params)
-    respond_with(@news)
+    respond_with(@admin, :location => admin_news_path)
   end
 
   def destroy
@@ -43,6 +50,6 @@ class NewsController < ApplicationController
     end
 
     def news_params
-      params.require(:news).permit(:title, :content, :img_url, :votes)
+      params.require(:news).permit(:title, :content, :img_url, :votes, :image)
     end
 end

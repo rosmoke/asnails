@@ -20,8 +20,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails'
 gem 'dragonfly'
 gem 'acts_as_indexed'
-gem 'social-share-button'
+gem 'social-share-button', '~> 0.1.6'
 gem 'magnific-popup-rails'
+gem 'thumbs_up', git: 'https://github.com/bouchard/thumbs_up.git', ref: 'f499a7c803c0a9fdcefe4275f2f0a10ca7964508'
 group :production do
   gem 'rack-cache', :require => 'rack/cache'
 end

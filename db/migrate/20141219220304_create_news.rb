@@ -5,7 +5,7 @@ class CreateNews < ActiveRecord::Migration
       t.text :content
       t.string :img_url
       t.integer :votes
-
+      t.string   :image_uid
       t.timestamps
     end
   end

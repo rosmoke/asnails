@@ -1,6 +1,10 @@
  Rails.application.routes.draw do
   
-resources :news
+resources :news do
+  member do
+    get :vote_for, :vote_against
+  end
+end
   resources :people
 
   get 'homes/show'

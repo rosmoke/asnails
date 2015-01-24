@@ -11,3 +11,4 @@
 //= require jquery.blockUI.js
 //= require jquery.blockUI
 //= require magnific-popup
+//= require jquery.autosize.js

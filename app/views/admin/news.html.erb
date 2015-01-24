@@ -44,7 +44,7 @@ $(document).ready(function() {
 
                       </td>
                       <td><%= news.content[0...60] %></td>
-                      <td><%= news.img_url %></td>
+                      <td><%= image_tag news.image.thumb('100x50#').url if news.image_stored? %></td>
                       <td class="center"><%= news.created_at.strftime("%m/%d/%Y - %H:%M") %></td>
                       <td class="center"><%= button_to 'Delete', news, :class => "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
                   </tr>

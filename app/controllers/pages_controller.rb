@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 	layout "pages"
-	before_action :set_name, only: [:index, :edit, :update]
+	before_action :set_name, only: [:index, :edit, :update, :vote_for_article]
 	def set_name
 	@content = Page.find(1)
 end
@@ -55,6 +55,8 @@ def articles
 		News.create!(:id => "1", :title => "Demo", :content => "Demo content", :img_url => "demo.png", :votes => "2")
 		@lastarticle = News.last
 	end
+	@lastthree = News.last(4)
+	@lastthree = @lastthree.first(3)
 end
 def update
 	@name = Page.find(1)

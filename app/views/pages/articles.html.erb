@@ -1,30 +1,31 @@
 <div class="generalnews"><h3><img class="imgnews" src="assets/iconnews.png">Beauty News</h3>
-	<img class="articlepicture" src="assets/picturebottom.jpg">
-	<h4><%= @lastarticle.title %></h4><br/>
-	<article><%= @lastarticle.content %></article>
+	<img class="articlepicture" <%= image_tag @lastarticle.image.url if @lastarticle.image_stored? %>
+	<h4><%= @lastarticle.title.capitalize %></h4>
+	<p>Share this article : </p>
+		<%= social_share_button_tag("My Site") %>
+		
+		</br></br></br></br>
+	<article><%= @lastarticle.content.capitalize %></article>
+	<%= link_to image_tag('like.png', :border => 0, :width => 30), vote_for_news_path(@lastarticle), :remote => true, :class => "voteimg" %>
+	<span class="votes"><%= pluralize(@lastarticle.votes.count, 'Vote') %></span>
+		
 </div>
 <div class="relatednews">
 	<h3><img class="imgnews" src="assets/iconnews.png">Latest News</h3>
 	<br/>
+	<% @lastthree.each_with_index do |related, index|  %>
 	<div>
-		<img class="latestnewsimg" src="assets/shellac.jpg">
-		<p class="latestnewsp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor t dolore magna aliqua. Ut 
-		</p>
+		<img class="latestnewsimg" <%= image_tag related.image.url if related.image_stored? %>
+		<p class="latestnewstitle"><%= related.title %>
+		<p class="latestnewsp"><%= truncate related.content, length: 90 %></p>
 		<a class="latestnewsreadmore" href="#">Read More</a>
 	</div>
-	<img class="dividinglinenews" src="assets/dividingline.png">
-	<div><img class="latestnewsimg" src="assets/shellac.jpg">
-		<p class="latestnewsp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor t dolore magna aliqua. Ut
-		</p>
-		<a class="latestnewsreadmore" href="#">Read More</a>
-		</div>
+		<% if index == @lastthree.size - 3 %>
 		<img class="dividinglinenews" src="assets/dividingline.png">
-	<div><img class="latestnewsimg" src="assets/shellac.jpg">
-		<p class="latestnewsp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor t dolore magna aliqua. Ut
-		</p>
-		<a class="latestnewsreadmore" href="#">Read More</a>
-	</div>
+		<% end  %>
+		<% if index == @lastthree.size - 2 %>
+		<img class="dividinglinenews" src="assets/dividingline.png">
+		<% end  %>
+	<% end  %>
+	
 </div>

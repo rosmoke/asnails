@@ -23,7 +23,7 @@
                 $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
                 $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
                 $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $DragOrientation: 0,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
 
                 $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
                     $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
@@ -164,7 +164,5 @@
         <!-- Arrow Right -->
         <span u="arrowright" class="jssora12r" style="width: 30px; height: 46px; top: 123px; right: 0px">
         </span>
-        <!-- Arrow Navigator Skin End -->
-        <a style="display: none" href="http://www.jssor.com">image carousel</a>
     </div>
     <!-- Jssor Slider End -->

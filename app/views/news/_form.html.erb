@@ -11,28 +11,24 @@
                           </ul>
                         </div>
                       <% end %>
+                      <div class="row">
+                      <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="form-group">
                             <%= f.text_field :title, :placeholder => 'Title', :class => 'form-control input-sm', :id => 'title' %>
                             </div>
 
-                            
-
-                            <div class="row">
+                            </div>
+                                
                                 <div class="col-xs-6 col-sm-6 col-md-6">
                                     <div class="form-group">
-                                    <%= f.text_field :content, :placeholder => 'Content', :class => 'form-control input-sm', :id => 'content' %>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <%= f.text_field :img_url, :placeholder => 'Img Url', :class => 'form-control input-sm', :id => 'img_url' %>
+                                         <%= f.text_area :content, :placeholder => 'Content', :class => 'form-control input-sm animated', :id => 'content' %>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                  <div class="col-xs-6 col-sm-6 col-md-6">
                                     <div class="form-group">
-                                <%= f.text_field :votes, :placeholder => 'Votes', :class => 'form-control input-sm', :id => 'votes' %>
+                                <%= f.file_field :image, required: false, :class => 'input-sm' %>
                                     </div>
                                 </div>
                             </div>

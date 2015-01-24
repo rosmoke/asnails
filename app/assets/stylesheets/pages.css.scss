@@ -227,6 +227,7 @@ a:link {
   width: 140px;
   border-radius: 2px;
   margin-right: 10px;
+  margin-bottom: -1px;
   float: left;
 }
 .latestnewsp, .latestnewsreadmore {
@@ -234,6 +235,11 @@ a:link {
   text-align: left;
   color: #d0c6cd;
   font-family: "Noteworthy";
+  line-height: 150%;
+}
+.latestnewstitle {
+ font-family: "Noteworthy";
+ color: white; 
 }
 a.latestnewsreadmore:link, a.latestnewsreadmore:visited, a.latestnewsreadmore:active, a.latestnewsreadmore {
   float: right;
@@ -245,6 +251,33 @@ a.latestnewsreadmore:link, a.latestnewsreadmore:visited, a.latestnewsreadmore:ac
 .dividinglinenews {
   margin-top: -5px;
   width: 95%
+}
+.voteimg {
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+}
+.votes {
+  position: absolute;
+  bottom: 100px;
+  left: 70px;
+  color: white;
+  font-size: 14px;
+}
+.generalnews p {
+  float: left;
+  color: white;
+  font-family: "Noteworthy";
+  font-size: 13px;
+  line-height: 9px;
+  margin-right: 4px;
+}
+.generalnews h4 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.social-share-button {
+  float: left;
 }
 /* News end */
 
