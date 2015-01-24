@@ -5,7 +5,8 @@ gem 'jquery-rails'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
 gem 'mysql'
-gem 'pg'
+
+
 gem 'devise'
 gem 'growlyflash', '~> 0.2.10'
 gem 'blockuijs-rails',  :git => 'git://github.com/rusanu/blockuijs-rails.git'
@@ -25,6 +26,8 @@ gem 'magnific-popup-rails'
 gem 'thumbs_up', git: 'https://github.com/bouchard/thumbs_up.git', ref: 'f499a7c803c0a9fdcefe4275f2f0a10ca7964508'
 group :production do
   gem 'rack-cache', :require => 'rack/cache'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
